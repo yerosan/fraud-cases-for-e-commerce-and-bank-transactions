@@ -8,13 +8,10 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score
 import mlflow
-<<<<<<< HEAD
 import tensorflow as tf
-=======
 import joblib  # Assuming you saved the model with joblib
 import tensorflow as tf
 import os
->>>>>>> task4
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Conv1D, MaxPooling1D, Flatten, LSTM
 
@@ -34,8 +31,6 @@ class ModelTrainer:
         """Train a scikit-learn model, log results in MLflow, and return the trained model."""
         model.fit(self.X_train, self.y_train)
         y_pred = model.predict(self.X_test)
-<<<<<<< HEAD
-=======
         # Specify the directory to save the model
         model_directory = "../models"
         os.makedirs(model_directory, exist_ok=True)
@@ -44,7 +39,6 @@ class ModelTrainer:
         model_filename = f"{model_directory}/{model.__class__.__name__}_model.pkl"
         joblib.dump(model, model_filename)  # Save model as .pkl file
         print(f"Model saved as {model_filename}")
->>>>>>> task4
         
         # Calculate and log metrics
         accuracy = accuracy_score(self.y_test, y_pred)
