@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/19591b128ea342019f2871e8705a72ec/artifacts
+end_time: 1730188486186
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 19591b128ea342019f2871e8705a72ec
+run_name: LSTM
+run_uuid: 19591b128ea342019f2871e8705a72ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730188486160
+status: 3
+tags: []
+user_id: Coop

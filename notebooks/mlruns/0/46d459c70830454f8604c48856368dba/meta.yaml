@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/46d459c70830454f8604c48856368dba/artifacts
+end_time: 1730182718747
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 46d459c70830454f8604c48856368dba
+run_name: GradientBoostingClassifier
+run_uuid: 46d459c70830454f8604c48856368dba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730182718715
+status: 3
+tags: []
+user_id: Coop

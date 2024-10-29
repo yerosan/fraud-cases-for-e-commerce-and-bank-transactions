@@ -3,7 +3,7 @@ import numpy as np
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import ipaddress
 class DataPreprocessing:
     def __init__(self):
          pass
@@ -140,7 +140,36 @@ class DataPreprocessing:
         plt.xlabel('Sex')
         plt.ylabel('Number of Transactions')
         plt.show()
+    
 
+    def merge_fraud_with_ip(self,fraud_df, ip_df):
+        # Function to convert IP address to integer
+        def ip_to_int(ip):
+            ip=int(ip)
+            try:
+                return int(ipaddress.ip_address(ip))
+            except ValueError:
+                return None  # Handle invalid IPs by returning None
+
+        # Convert 'ip_address' in fraud_df to integer format
+        fraud_df['ip_address'] = fraud_df['ip_address'].apply(ip_to_int)
+        
+        # Convert 'lower_bound_ip_address' and 'upper_bound_ip_address' in ip_df to integer format
+        ip_df['lower_bound_ip_address'] = ip_df['lower_bound_ip_address'].apply(ip_to_int)
+        ip_df['upper_bound_ip_address'] = ip_df['upper_bound_ip_address'].apply(ip_to_int)
+        
+        # Function to find the country for a given IP address
+        def find_country(ip_address):
+            # Filter the rows in ip_df where the IP falls between lower and upper bounds
+            matching_row = ip_df[(ip_df['lower_bound_ip_address'] <= ip_address) & (ip_df['upper_bound_ip_address'] >= ip_address)]
+            if not matching_row.empty:
+                return matching_row.iloc[0]['country']  # Return the country of the first match
+            return None  # Return None if no match is found
+
+        # Create a new column 'country' by applying the find_country function to each row in fraud_df
+        fraud_df['country'] = fraud_df['ip_address'].apply(find_country)
+        
+        return fraud_df
 
     def feature_engineering(self,df):
         # Transaction frequency
@@ -149,10 +178,11 @@ class DataPreprocessing:
         # Time-based features: Extract hour of day and day of the week
         df['hour_of_day'] = df['purchase_time'].dt.hour
         df['day_of_week'] = df['purchase_time'].dt.dayofweek
+        """Calculate transaction frequency for each user."""
+        df['transaction_count'] = self.fraud_data.groupby('user_id').cumcount() + 1
 
         return df
-
-
+    
     def encode_categorical(df, categorical_columns):
         df_encoded = pd.get_dummies(df, columns=categorical_columns, drop_first=True)
         return df_encoded
