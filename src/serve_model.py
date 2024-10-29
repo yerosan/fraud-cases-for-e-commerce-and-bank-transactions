@@ -63,9 +63,6 @@ def predict():
         prediction_value = prediction[0].item() if isinstance(prediction[0], np.generic) else prediction[0]
 
         return jsonify({"prediction": prediction_value})
-        # prediction = model.predict([input_features])  # Replace with actual input format
-        # app.logger.info(f"Prediction: {prediction[0]}")
-        # return jsonify({"prediction": prediction[0]})
     except Exception as e:
         app.logger.error(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
