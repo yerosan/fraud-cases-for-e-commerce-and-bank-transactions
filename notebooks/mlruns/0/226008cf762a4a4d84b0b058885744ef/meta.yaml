@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/226008cf762a4a4d84b0b058885744ef/artifacts
+end_time: 1730210679425
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 226008cf762a4a4d84b0b058885744ef
+run_name: RandomForestClassifier
+run_uuid: 226008cf762a4a4d84b0b058885744ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730210679395
+status: 3
+tags: []
+user_id: Coop

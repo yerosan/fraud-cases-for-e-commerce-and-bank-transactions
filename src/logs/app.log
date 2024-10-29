@@ -1,0 +1,6 @@
+Error: 'features'
+Error: 'features'
+Error: float() argument must be a string or a real number, not 'dict'
+Error: float() argument must be a string or a real number, not 'dict'
+Error: Object of type int64 is not JSON serializable
+Error: name 'np' is not defined
