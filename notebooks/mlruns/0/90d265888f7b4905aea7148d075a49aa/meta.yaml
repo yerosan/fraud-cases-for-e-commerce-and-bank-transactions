@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/90d265888f7b4905aea7148d075a49aa/artifacts
+end_time: 1730199332196
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 90d265888f7b4905aea7148d075a49aa
+run_name: RNN
+run_uuid: 90d265888f7b4905aea7148d075a49aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730199332180
+status: 3
+tags: []
+user_id: Coop
