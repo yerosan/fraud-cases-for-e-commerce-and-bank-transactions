@@ -1,4 +1,5 @@
-flask
 joblib
 scikit-learn  # If using sklearn models
 flask-logging
+Flask>=2.0.0
+Dash>=2.0.0

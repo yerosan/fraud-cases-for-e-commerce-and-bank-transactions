@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load fraud data
-data = pd.read_csv("fraud_data.csv")
+data = pd.read_csv("../Data/Fraud_Data.csv")
 
 # Helper functions to calculate insights
 def get_summary_stats():
