@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/54829b7d606c4048b7e6799e27e17325/artifacts
+end_time: 1730199279539
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 54829b7d606c4048b7e6799e27e17325
+run_name: MLPClassifier
+run_uuid: 54829b7d606c4048b7e6799e27e17325
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730199279499
+status: 3
+tags: []
+user_id: Coop

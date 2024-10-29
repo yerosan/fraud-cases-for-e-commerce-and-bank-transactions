@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/3da81e2bffb54a1f9a9954a9d7d4b83b/artifacts
+end_time: 1730182679387
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3da81e2bffb54a1f9a9954a9d7d4b83b
+run_name: DecisionTreeClassifier
+run_uuid: 3da81e2bffb54a1f9a9954a9d7d4b83b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730182679358
+status: 3
+tags: []
+user_id: Coop

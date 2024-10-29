@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/846918dff3ab4f6fb1a3813c4466055d/artifacts
+end_time: 1730210807812
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 846918dff3ab4f6fb1a3813c4466055d
+run_name: CNN
+run_uuid: 846918dff3ab4f6fb1a3813c4466055d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730210807765
+status: 3
+tags: []
+user_id: Coop

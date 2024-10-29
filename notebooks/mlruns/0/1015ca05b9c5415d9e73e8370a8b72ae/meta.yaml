@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/10Academy/Week8%269/notebooks/mlruns/0/1015ca05b9c5415d9e73e8370a8b72ae/artifacts
+end_time: 1730202621121
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1015ca05b9c5415d9e73e8370a8b72ae
+run_name: LogisticRegression
+run_uuid: 1015ca05b9c5415d9e73e8370a8b72ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730202621083
+status: 3
+tags: []
+user_id: Coop
